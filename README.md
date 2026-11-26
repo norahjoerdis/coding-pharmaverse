@@ -43,8 +43,6 @@ Rscript question_1_sdtm/01_create_ds_domain.R > question_1_sdtm/logs/01_create_d
 
 ### Python (Question 4)
 
-# Question 4 (Bonus) – GenAI Clinical Data Assistant
-
 **Objective:** Translate free-text safety questions into structured pandas queries on the AE dataset. An LLM (OpenAI through LangChain) maps the user's intent to the right column, with no hard-coded rules.
 
 ## Files
