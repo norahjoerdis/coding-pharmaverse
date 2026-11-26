@@ -36,7 +36,7 @@ adsl <- pharmaverseadam::adsl %>%
 adae <- pharmaverseadam::adae %>%
   mutate(ACTARM = factor(ACTARM, levels = arm_levels))
 
-# ---- 2. Prepare analysis data -----------------------------------------------
+# ---- 2. Prepare table --------------------------------------------------------
 teae <- adae %>% 
   filter(TRTEMFL == "Y") %>% # Treatment-emergent AE
   tbl_hierarchical(

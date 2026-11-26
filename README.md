@@ -7,7 +7,7 @@ Solutions to the Pharmaverse (R) and Python coding assessment.
 | Folder | Question | Main script(s) | Outputs |
 |---|---|---|---|
 | [`question_1_sdtm/`](question_1_sdtm/) | Q1 – SDTM DS domain with `{sdtm.oak}` | `01_create_ds_domain.R` | `output/ds.*`, `logs/*.log` |
-| [`question_2_adam/`](question_2_adam/) | Q2 – ADaM ADSL with `{admiral}` | `create_adsl.R` | `output/adsl.*`, `logs/*.log` |
+| [`question_2_adam/`](question_2_adam/) | Q2 – ADaM ADSL with `{admiral}` | `01_create_adsl.R` | `output/adsl.*`, `logs/*.log` |
 | [`question_3_tlg/`](question_3_tlg/) | Q3 – AE summary table and plots | `01_create_ae_summary_table.R`, `02_create_visualizations.R` | `output/ae_summary_table.html`, 2 × PNG, `logs/*.log` |
 | [`question_4_python/`](question_4_python/) | Q4 (bonus) – GenAI Clinical Data Assistant | `clinical_trial_data_agent.py`, `test_agent.py` | `logs/*.log` |
 
@@ -32,7 +32,6 @@ R ≥ 4.2.0. Run everything from the **repository root**, either in VS Code (bel
 
 ```r
 source("install_packages.R")   # once
-source("run_all.R")            # runs all scripts and writes logs
 ```
 
 To run one script and capture its log from a terminal:

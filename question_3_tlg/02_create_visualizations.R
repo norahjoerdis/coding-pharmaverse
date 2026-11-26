@@ -30,7 +30,11 @@ sink(log_con, type = "message")   # messages/warnings -> log
 
 # ---- 1. Read data ------------------------------------------------------------
 adsl <- pharmaverseadam::adsl
-adae <- pharmaverseadam::adae
+adae <- pharmaverseadam::adae %>%
+  mutate(ACTARM = factor(ACTARM, 
+                         levels = c("Placebo", 
+                                    "Xanomeline Low Dose", 
+                                    "Xanomeline High Dose")))
 
 # ---- 2. Plot 1: AE severity distribution by treatment -----------------------
 sev_data <- adae %>%
