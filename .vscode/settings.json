@@ -1,0 +1,24 @@
+{
+  // R extension (REditorSupport.r)
+  "r.sessionWatcher": true,
+  "r.lsp.diagnostics": true,
+  "r.alwaysUseActiveTerminal": false,
+  "r.rterm.option": ["--no-save", "--no-restore"],
+
+  // Tidyverse style: 2-space indent, 80-char lines
+  "[r]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.rulers": [80],
+    "editor.defaultFormatter": "REditorSupport.r"
+  },
+
+  // Python (Question 4)
+  "python.defaultInterpreterPath": "${workspaceFolder}/question_4_python/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+
+  "files.exclude": {
+    "**/.Rhistory": true,
+    "**/__pycache__": true
+  }
+}

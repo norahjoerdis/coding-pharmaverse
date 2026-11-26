@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "options": { "cwd": "${workspaceFolder}" },
+  "tasks": [
+    {
+      "label": "R: run current file",
+      "type": "shell",
+      "command": "Rscript",
+      "args": ["${relativeFile}"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "R: run all (write logs)",
+      "type": "shell",
+      "command": "Rscript",
+      "args": ["run_all.R"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "R: install packages",
+      "type": "shell",
+      "command": "Rscript",
+      "args": ["install_packages.R"],
+      "problemMatcher": []
+    }
+  ]
+}
